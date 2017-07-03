@@ -278,6 +278,7 @@
             this.lnkGitHub.TabIndex = 2;
             this.lnkGitHub.TabStop = true;
             this.lnkGitHub.Text = "Github";
+            this.lnkGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGitHub_LinkClicked);
             // 
             // frmMain
             // 

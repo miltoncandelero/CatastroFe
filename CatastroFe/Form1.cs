@@ -130,5 +130,10 @@ El plano existe pero en este momento los dioses del catastro no pueden mostrarlo
 - Los datos para ubicar el Plano son Insuficientes
 El plano y/o el año son incorrectos.","Lista de errores",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
+
+        private void lnkGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/miltoncandelero/CatastroFe/");
+        }
     }
 }

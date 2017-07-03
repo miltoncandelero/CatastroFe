@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CatastroFe")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Descarga planos y mapas del servidor de Catastro de la provincia de Santa Fe.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("CatastroFe")]

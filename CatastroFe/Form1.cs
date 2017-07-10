@@ -82,7 +82,7 @@ namespace CatastroFe
 
             if (filename.IndexOf("pdf") == -1)
             {
-                urlPlan.Text = filename;
+                urlPlan.Text = Regex.Replace(filename, "<.*?>", string.Empty) ;
                 return;
             }
 
@@ -94,7 +94,7 @@ namespace CatastroFe
         private string getCodigoPlano(string pla, string an)
         {
             WebClient client = new WebClient();
-            string retval = client.DownloadString("http://scit.santafe.gov.ar/scitMap/obtiene_plano.php?nro_plano=" + pla.Substring(1) + "&anio_plano=" + an + "&procedencia=1");
+            string retval = client.DownloadString("http://scit.santafe.gov.ar/scitMap/obtiene_plano.php?nro_plano=" + pla.TrimStart('0') + "&anio_plano=" + an + "&procedencia=1");
             return retval;
         }
 
